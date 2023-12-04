@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:tredingview_v1/home.dart';
+import 'package:tredingview_v1/pages/agoravc/videocallhomepage.dart';
 import 'package:tredingview_v1/tradingview/tradingview_chart.dart';
 
 void main() {
@@ -15,8 +16,14 @@ class MyApp extends StatelessWidget {
       title: 'Flutter Test ALL PUB',
       theme: ThemeData(
         primarySwatch: Colors.blue,
+        visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
-      home: const Home(),
+      routes: {
+        '/home': (context) => const HomeScreen(),
+        '/trading-view-chart': (context) => const TradingViewChart(),
+        '/agora-vc-input-channelname': (context) => const VideoCallHomePage(),
+      },
+      home: const HomeScreen(),
     );
   }
 }
