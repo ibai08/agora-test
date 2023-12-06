@@ -36,7 +36,7 @@ class _VideoCallPageState extends State<VideoCallPage> {
   void dispose() {
     _users.clear();
     _engine.leaveChannel();
-    _engine.destroy();
+    // _engine.destroy();
     super.dispose();
   }
 
@@ -90,6 +90,9 @@ class _VideoCallPageState extends State<VideoCallPage> {
         final info = "User Offline: $uid";
         _infoStrings.add(info);
         _users.remove(uid);
+        if (_users.length < 2) {
+          Navigator.pop(context);
+        }
       });
     }, firstRemoteVideoFrame: (uid, width, height, elpased) {
       setState(() {
@@ -111,7 +114,6 @@ class _VideoCallPageState extends State<VideoCallPage> {
       ));
     }
     final views = list;
-    print(views.length);
     return Column(
       children: List.generate(
         views.length,
@@ -194,7 +196,8 @@ class _VideoCallPageState extends State<VideoCallPage> {
                     return const Text("NULL");
                   }
                   return Padding(
-                    padding: EdgeInsets.symmetric(vertical: 3, horizontal: 10),
+                    padding:
+                        const EdgeInsets.symmetric(vertical: 3, horizontal: 10),
                     child: Row(
                       mainAxisSize: MainAxisSize.min,
                       children: [

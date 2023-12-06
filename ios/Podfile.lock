@@ -1,4 +1,7 @@
 PODS:
+  - agora_chat_sdk (0.0.1):
+    - Flutter
+    - HyphenateChat (= 4.0.0)
   - agora_rtc_engine (5.3.1):
     - AgoraIrisRTC_iOS (= 3.7.0.3)
     - AgoraRtcEngine_iOS (= 3.7.0.3)
@@ -32,6 +35,7 @@ PODS:
   - AgoraRtcEngine_iOS/VirtualBackground (3.7.0.3)
   - AgoraRtm_iOS (1.5.1)
   - Flutter (1.0.0)
+  - HyphenateChat (4.0.0)
   - path_provider_ios (0.0.1):
     - Flutter
   - permission_handler_apple (9.1.1):
@@ -40,6 +44,7 @@ PODS:
     - Flutter
 
 DEPENDENCIES:
+  - agora_chat_sdk (from `.symlinks/plugins/agora_chat_sdk/ios`)
   - agora_rtc_engine (from `.symlinks/plugins/agora_rtc_engine/ios`)
   - agora_rtm (from `.symlinks/plugins/agora_rtm/ios`)
   - Flutter (from `Flutter`)
@@ -52,8 +57,11 @@ SPEC REPOS:
     - AgoraIrisRTC_iOS
     - AgoraRtcEngine_iOS
     - AgoraRtm_iOS
+    - HyphenateChat
 
 EXTERNAL SOURCES:
+  agora_chat_sdk:
+    :path: ".symlinks/plugins/agora_chat_sdk/ios"
   agora_rtc_engine:
     :path: ".symlinks/plugins/agora_rtc_engine/ios"
   agora_rtm:
@@ -68,16 +76,18 @@ EXTERNAL SOURCES:
     :path: ".symlinks/plugins/webview_flutter_wkwebview/ios"
 
 SPEC CHECKSUMS:
+  agora_chat_sdk: ce66fe2e4f70ee969f006d5c200fde9ac9613d45
   agora_rtc_engine: 47e0ddc177bae1b85eb00d01a0ea546d87ce0b8b
   agora_rtm: 51b5cef21d9d664563b9a420f2c59531b1ad3e4c
   AgoraIrisRTC_iOS: d802443ae16f043e7b2805c978880eb62ee8154c
   AgoraRtcEngine_iOS: 549bb3853d5afb18fabca4197786f39f31141da8
   AgoraRtm_iOS: 595a9fa33a409831e6183396ea8f8bc563918403
   Flutter: 50d75fe2f02b26cc09d224853bb45737f8b3214a
+  HyphenateChat: 9f6e4ac3b290e52cc0e52491f85d86097b35c285
   path_provider_ios: 14f3d2fd28c4fdb42f44e0f751d12861c43cee02
   permission_handler_apple: e76247795d700c14ea09e3a2d8855d41ee80a2e6
   webview_flutter_wkwebview: b7e70ef1ddded7e69c796c7390ee74180182971f
 
-PODFILE CHECKSUM: aafe91acc616949ddb318b77800a7f51bffa2a4c
+PODFILE CHECKSUM: ad74cfe676791d9f8126180d2450fa97b9208deb
 
 COCOAPODS: 1.12.1

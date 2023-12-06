@@ -42,19 +42,32 @@ class _BtnRandomListState extends State<BtnRandomList> {
                 ),
               ),
             ),
-            // TextButton(
-            //   style:
-            //       TextButton.styleFrom(backgroundColor: ConstColor.accentGreen),
-            //   onPressed: () {
-            //     Navigator.pushNamed(context, '/agora-video-call-accept');
-            //   },
-            //   child: Text(
-            //     "Agora Video Call Accept",
-            //     style: TextStyle(
-            //       color: ConstColor.white,
-            //     ),
-            //   ),
-            // ),
+            TextButton(
+              style:
+                  TextButton.styleFrom(backgroundColor: ConstColor.accentGreen),
+              onPressed: () {
+                Navigator.pushNamed(context, '/agora-message');
+              },
+              child: Text(
+                "Agora Message",
+                style: TextStyle(
+                  color: ConstColor.white,
+                ),
+              ),
+            ),
+            TextButton(
+              style:
+                  TextButton.styleFrom(backgroundColor: ConstColor.accentGreen),
+              onPressed: () {
+                Navigator.pushNamed(context, '/agora-call-input-channelname');
+              },
+              child: Text(
+                "Agora Voice Call",
+                style: TextStyle(
+                  color: ConstColor.white,
+                ),
+              ),
+            ),
             TextButton(
               style:
                   TextButton.styleFrom(backgroundColor: ConstColor.accentGreen),

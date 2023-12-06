@@ -1,4 +1,4 @@
 String appId = "6e7fbafe14284861acbd2e93e4885da5";
 String token =
-    "007eJxTYLhzkO/Pti+tvpmd7Vs+PnsyT9hzusnrrY5S03YxTRBTuT1TgcEs1TwtKTEt1dDEyMLEwswwMTkpxSjV0jjVxMLCNCXR9HBqbmpDICND4cqjjIwMEAji8zCUpBWkFhXn5yXmlCUzMAAAPuAlbg==";
-String channelId = "tfpersonalvc";
+    "007eJxTYOgL5krqKP/5QT74udb/3Xqvp5uLTCgIWL1zzmu7xtpCXnUFBrNU87SkxLRUQxMjCxMLM8PE5KQUo1RL41QTCwvTlERT8yt5qQ2BjAyXfp5kYIRCEJ+ZoSw5mYEBAFn3IFA=";
+String channelId = "vcc";
